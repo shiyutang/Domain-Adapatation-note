@@ -1,7 +1,6 @@
 # Domain-Adapatation-note
 
-These are the domain adaptation related note, it includes the paper reading, experiment record, and some reflections
-
+These are the domain adaptation related note, it includes the paper reading, experiment record, and some reflections 
 :octocat: 
 
 # Related Paper Reading 
