@@ -1,5 +1,8 @@
-# 加载预训练模型在ADVENT 目录下测试：
-## Advent
+# ADVENT实验
+记录ADVENT 的复现实验和重新训练结果和分析
+
+## 加载预训练模型在ADVENT 目录下测试：
+### Advent
 rlaunch --gpu=2 --cpu=30 --memory=8000 --python3 test.py --cfg ./advent/scripts/configs/advent_pretrained.yml
 按照github主页上的要求，测试结果
 
@@ -9,7 +12,7 @@ rlaunch --gpu=2 --cpu=30 --memory=8000 --python3 test.py --cfg ./advent/scripts/
 
 </div>
 
-## Minent 总体略差，但是个别类别也有很好的
+### Minent 总体略差，但是个别类别也有很好的
 rlaunch --gpu=2 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scripts/configs/minent_pretrained.yml
 <div align=center>
 
@@ -17,7 +20,7 @@ rlaunch --gpu=2 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scrip
 
 </div>
 
-## Advent +minent 效果最好
+### Advent +minent 效果最好
 rlaunch --gpu=1 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scripts/configs/advent+minent_pretrained.yml
 <div align=center>
 
@@ -25,20 +28,20 @@ rlaunch --gpu=1 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scrip
 
 </div>
 
-# 在ADVENT 下重新训练并测试结果：
-## epoch = 118，000，mIoU: 41.56 比加载预训练模型差了2.2%
+## 在ADVENT 下重新训练并测试结果：
+### epoch = 118，000，mIoU: 41.56 比加载预训练模型差了2.2%
 <div align=center>
 
 ![alt text](Pics/ADVENT/4.png)
 
 </div>
 
-## epoch = 96000 和预训练模型差了0.7%。  mIoU: 43.06
+### epoch = 96000 和预训练模型差了0.7%。  mIoU: 43.06
     model dir: /data/Projects/ADVENT/experiments/snapshots/GTA2Cityscapes_DeepLabv2_AdvEnt/model_96000.pth
 
 
 
-## 训练结果分析
+### 训练结果分析
 下图为网络训练的loss变化：
 <div align=center>
 
