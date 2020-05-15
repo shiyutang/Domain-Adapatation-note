@@ -8,7 +8,7 @@ rlaunch --gpu=2 --cpu=30 --memory=8000 --python3 test.py --cfg ./advent/scripts/
 
 <div align=center>
 
-![alt text](Pics/ADVENT/1.png)
+![alt text](../Pics/ADVENT/1.png)
 
 </div>
 
@@ -16,7 +16,7 @@ rlaunch --gpu=2 --cpu=30 --memory=8000 --python3 test.py --cfg ./advent/scripts/
 rlaunch --gpu=2 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scripts/configs/minent_pretrained.yml
 <div align=center>
 
-![alt text](Pics/ADVENT/2.png)
+![alt text](../Pics/ADVENT/2.png)
 
 </div>
 
@@ -24,7 +24,7 @@ rlaunch --gpu=2 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scrip
 rlaunch --gpu=1 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scripts/configs/advent+minent_pretrained.yml
 <div align=center>
 
-![alt text](Pics/ADVENT/3.png)
+![alt text](../Pics/ADVENT/3.png)
 
 </div>
 
@@ -32,7 +32,7 @@ rlaunch --gpu=1 --cpu=30 --memory=80000 – python3 test.py --cfg ./advent/scrip
 ### epoch = 118，000，mIoU: 41.56 比加载预训练模型差了2.2%
 <div align=center>
 
-![alt text](Pics/ADVENT/4.png)
+![alt text](../Pics/ADVENT/4.png)
 
 </div>
 
